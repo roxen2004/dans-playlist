@@ -1,0 +1,10 @@
+const KEY="dansPlaylistComments";
+document.addEventListener("DOMContentLoaded",()=>{setupNavigation();setupAudio();setupComments();setupHeader();setYear()});
+function setupNavigation(){document.querySelectorAll('nav a[href^="#"]').forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth"})}}))}
+function setupAudio(){const players=document.querySelectorAll("audio");players.forEach(p=>p.addEventListener("play",()=>players.forEach(o=>{if(o!==p)o.pause()})))}
+function getComments(){try{return JSON.parse(localStorage.getItem(KEY))||[]}catch(e){return[]}}
+function saveComments(c){localStorage.setItem(KEY,JSON.stringify(c))}
+function setupComments(){const form=document.querySelector("#comment-form");if(!form)return;form.addEventListener("submit",e=>{e.preventDefault();const name=document.querySelector("#name").value.trim(),text=document.querySelector("#comment").value.trim();if(!name||!text)return;const c=getComments();c.push({name,text,date:new Date().toLocaleDateString("fa-IR")});saveComments(c);form.reset();renderComments()});renderComments()}
+function renderComments(){const list=document.querySelector("#comment-list");if(!list)return;list.innerHTML="";const c=getComments();if(!c.length){const p=document.createElement("p");p.textContent="هنوز نظری ثبت نشده؛ اولین نظر را بنویس.";list.appendChild(p);return}c.forEach((x,i)=>{const a=document.createElement("article"),h=document.createElement("h3"),p=document.createElement("p"),d=document.createElement("small"),b=document.createElement("button");a.className="comment";h.textContent=x.name;p.textContent=x.text;d.textContent=x.date;b.type="button";b.textContent="Delete";b.addEventListener("click",()=>{const c=getComments();c.splice(i,1);saveComments(c);renderComments()});a.append(h,p,d,b);list.appendChild(a)})}
+function setupHeader(){const h=document.querySelector(".site-header");if(!h)return;window.addEventListener("scroll",()=>h.classList.toggle("scrolled",window.scrollY>50))}
+function setYear(){document.querySelectorAll(".current-year").forEach(e=>e.textContent=new Date().getFullYear())}

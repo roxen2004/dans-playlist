@@ -1,0 +1,288 @@
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:#fff;color:#17151a;font-family:Tahoma,Arial,sans-serif;line-height:1.8}a{color:inherit;text-decoration:none}.container{width:min(1100px,92%);margin:auto}.site-header{position:sticky;top:0;z-index:1000;background:#111014;border-bottom:2px solid #3f245f;transition:.3s}.site-header.scrolled{box-shadow:0 8px 25px rgba(0,0,0,.15)}.nav-container{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{color:#fff;font-family:Arial,sans-serif;font-size:1.25rem;font-weight:800;letter-spacing:1px}nav{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}nav a{color:#fff;font-size:.95rem;transition:.2s}nav a:hover{color:#a77ac4;transform:translateY(-1px)}.hero{min-height:72vh;display:flex;align-items:center;background:linear-gradient(135deg,#fff,#f4eef9 55%,#ebe2f3);border-bottom:1px solid #ded5e5}.hero .container{padding:80px 0}.eyebrow{color:#542c73;font-family:Arial,sans-serif;font-size:.82rem;font-weight:bold;letter-spacing:3px;margin-bottom:18px}.hero h1{max-width:850px;color:#111014;font-size:clamp(2rem,5vw,4.2rem);line-height:1.35;margin-bottom:20px}.tagline{color:#5c5661;font-family:Arial,sans-serif;font-size:1.15rem;margin-bottom:32px}.hero-button{display:inline-block;background:#111014;color:#fff;padding:10px 22px;border-radius:8px;transition:.2s}.hero-button:hover{background:#3f245f;transform:scale(1.04)}.intro{padding:65px 0 30px;text-align:center}.intro p{max-width:760px;margin:auto;color:#5b5560;font-size:1.05rem}.section{padding:80px 0}.section-title{display:flex;align-items:baseline;gap:14px;margin-bottom:45px}.section-title span{color:#79509a;font-family:Arial,sans-serif;font-size:.85rem;font-weight:bold}.section-title h2{color:#111014;font-family:Arial,Tahoma,sans-serif;font-size:2.2rem;letter-spacing:1px}.mood{margin-bottom:55px}.mood>h3{display:inline-block;background:#111014;color:#fff;padding:8px 18px;margin-bottom:22px;border-right:4px solid #79509a;font-family:Arial,Tahoma,sans-serif;font-size:1.15rem}.song-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.song-card{min-height:210px;padding:25px;background:#fff;border:1px solid #ddd4e3;border-radius:12px;box-shadow:0 8px 25px rgba(35,20,45,.07);transition:.25s}.song-card:hover{transform:scale(1.03);border-color:#79509a}.song-card h4{color:#25152e;font-family:Arial,Tahoma,sans-serif;font-size:1.25rem;margin-bottom:4px}.song-card p{color:#716a75;margin-bottom:20px}audio{width:100%}.special-section{background:#111014;color:#fff}.light-title h2{color:#fff}.special-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.special-card{min-height:330px;padding:28px;background:#1a181d;border:1px solid #302b34;border-right:5px solid #79509a;border-radius:12px;transition:.25s}.special-card:hover{transform:scale(1.03);background:#211d25}.special-number{color:#a77ac4;font-family:Arial,sans-serif;font-weight:bold}.special-card h3{color:#fff;font-family:Arial,Tahoma,sans-serif;font-size:1.45rem;margin-top:8px}.special-card .artist{color:#a77ac4;font-family:Arial,sans-serif;margin-bottom:20px}.special-card>p:not(.special-number):not(.artist){color:#d8d3db;margin-bottom:22px}.comment-form{max-width:720px;display:grid;gap:10px}.comment-form label{color:#33283a;font-weight:bold;margin-top:8px}.comment-form input,.comment-form textarea{width:100%;padding:12px 14px;border:1px solid #d2c7d9;border-radius:8px;background:#fff;color:#17151a;font-family:Tahoma,Arial,sans-serif;font-size:1rem;outline:none}.comment-form input:focus,.comment-form textarea:focus{border-color:#79509a;box-shadow:0 0 0 3px rgba(121,80,154,.12)}.comment-form button,.comment button{width:fit-content;border:0;border-radius:8px;background:#111014;color:#fff;padding:10px 18px;cursor:pointer;font-family:Tahoma,Arial,sans-serif;transition:.2s}.comment-form button:hover,.comment button:hover{background:#3f245f;transform:scale(1.03)}.comment-list{margin-top:35px;display:grid;gap:15px}.comment{padding:20px;background:#f7f3f9;border-right:4px solid #79509a;border-radius:8px}.comment h3{color:#2e1c38}.comment p{margin:8px 0;color:#514a55;white-space:pre-wrap;overflow-wrap:anywhere}.comment small{display:block;color:#837987;margin-bottom:10px}.about-section{background:#f5f0f8}.about-section p{color:#514a55}.english-line{margin-top:15px;color:#542c73!important;font-family:Arial,sans-serif;letter-spacing:2px}.final-note{padding-top:70px;padding-bottom:70px;text-align:center}.final-note p{color:#3f245f;font-size:1.5rem;font-weight:bold}footer{padding:28px 15px;background:#111014;color:#bdb7c1;text-align:center;font-family:Arial,Tahoma,sans-serif}@media(max-width:800px){.nav-container{flex-direction:column;padding:15px 0}.hero{min-height:auto}.hero .container{padding:70px 0}.song-grid,.special-grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.section{padding:60px 0}.song-grid,.special-grid{grid-template-columns:1fr}.hero h1{font-size:2rem}.section-title h2{font-size:1.8rem}}
+
+/* Extra dark details + download buttons */
+.download-btn{display:inline-block;margin-top:10px;padding:7px 13px;border-radius:7px;background:#111014;color:#fff;font:600 .82rem Arial,Tahoma,sans-serif;letter-spacing:.2px;transition:.2s}.download-btn:hover{background:#3f245f;transform:translateY(-1px)}
+.intro{background:#111014;color:#fff;width:100%;max-width:none;padding-left:4%;padding-right:4%;margin-top:0}.intro p{color:#ddd7e0}.about-section{background:#111014}.about-section .section-title h2,.about-section p{color:#fff}.about-section .section-title span{color:#a77ac4}.about-section .english-line{color:#a77ac4!important}.final-note{background:#111014;width:100%;max-width:none;color:#fff}.final-note p{color:#fff}.date-lines{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:12px;color:#a77ac4;font:600 .9rem Arial,Tahoma,sans-serif;letter-spacing:.5px}.date-lines span{padding:5px 10px;border:1px solid #302b34;border-radius:7px;background:#1a181d}
+
+
+/* Final visual polish */
+body{background:#f8f6f9;background-image:radial-gradient(circle at 10% 10%,rgba(121,80,154,.06) 0 1px,transparent 1px),radial-gradient(circle at 90% 30%,rgba(17,16,20,.045) 0 1px,transparent 1px);background-size:34px 34px,46px 46px}
+.site-header{background:rgba(10,9,12,.96);backdrop-filter:blur(14px);box-shadow:0 10px 35px rgba(0,0,0,.18)}
+.logo{position:relative;text-shadow:0 0 18px rgba(167,122,196,.25)}
+.logo:after{content:"";display:inline-block;width:6px;height:6px;margin-left:8px;border-radius:50%;background:#a77ac4;box-shadow:0 0 12px #a77ac4;vertical-align:middle}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 30%,rgba(121,80,154,.18),transparent 28%),radial-gradient(circle at 15% 80%,rgba(17,16,20,.08),transparent 30%),linear-gradient(135deg,#fff,#f3edf7 58%,#e7ddec)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;pointer-events:none}.hero:before{width:260px;height:260px;right:-90px;top:-90px;border:1px solid rgba(63,36,95,.18);box-shadow:0 0 0 18px rgba(63,36,95,.035),0 0 0 36px rgba(63,36,95,.02)}.hero:after{width:8px;height:8px;left:13%;top:23%;background:#79509a;box-shadow:0 0 20px 5px rgba(121,80,154,.28)}
+.hero .container{position:relative;z-index:1}.hero-button{border:1px solid #302033;box-shadow:0 10px 25px rgba(17,16,20,.16)}
+.intro{position:relative;overflow:hidden;border-top:1px solid #302b34;border-bottom:1px solid #302b34;box-shadow:0 18px 45px rgba(17,16,20,.12)}
+.intro:before{content:"✦";position:absolute;right:7%;top:50%;transform:translateY(-50%);font-size:5rem;color:rgba(167,122,196,.08)}
+.intro p{position:relative;z-index:1;font-size:1.08rem;line-height:2.2;letter-spacing:.1px}
+.section-title{position:relative}.section-title h2{letter-spacing:1.5px}.section-title:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,rgba(121,80,154,.35),transparent);margin-right:8px}
+.mood>h3{box-shadow:0 7px 18px rgba(17,16,20,.14);border-right-width:5px}
+.song-card{position:relative;overflow:hidden;background:rgba(255,255,255,.92);border-color:#d9cfe0;box-shadow:0 12px 32px rgba(35,20,45,.075)}
+.song-card:before{content:"";position:absolute;left:-35px;bottom:-35px;width:95px;height:95px;border-radius:50%;background:rgba(121,80,154,.045)}
+.song-card:hover{transform:translateY(-5px) scale(1.015);box-shadow:0 18px 38px rgba(35,20,45,.13)}
+.download-btn{border:1px solid #302b34;box-shadow:0 5px 14px rgba(17,16,20,.1)}
+.special-section{position:relative;overflow:hidden;background:#111014;border-top:1px solid #302b34;border-bottom:1px solid #302b34}
+.special-section:before{content:"DAN'S PLAYLIST";position:absolute;left:-20px;bottom:15px;color:rgba(255,255,255,.025);font:900 clamp(4rem,12vw,9rem)/1 Arial;letter-spacing:5px;white-space:nowrap;pointer-events:none}
+.special-grid,.special-section .section-title{position:relative;z-index:1}.special-card{background:rgba(24,22,28,.9);border-color:#342d39;box-shadow:0 18px 40px rgba(0,0,0,.25)}.special-card:hover{transform:translateY(-6px);box-shadow:0 22px 45px rgba(0,0,0,.34)}
+.comment{box-shadow:0 8px 22px rgba(35,20,45,.06)}
+.about-section{position:relative;overflow:hidden;background:linear-gradient(135deg,#0d0c0f,#17131a)}
+.about-section:after{content:"✦  ✧  ✦";position:absolute;left:7%;bottom:12%;color:rgba(167,122,196,.2);font-size:1.8rem;letter-spacing:14px}.about-section .container{position:relative;z-index:1}
+.final-note{position:relative;overflow:hidden;border-top:1px solid #302b34;border-bottom:1px solid #302b34}.final-note:before{content:"✦";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);font:100 10rem/1 Georgia;color:rgba(167,122,196,.045);pointer-events:none}.final-note>*{position:relative;z-index:1}
+.date-lines{flex-direction:column;align-items:center;gap:15px;margin-top:24px}.date-lines span{min-width:210px;display:flex;justify-content:center;align-items:center;gap:14px;padding:8px 14px;background:#17151a;border-color:#3a3040;box-shadow:0 8px 20px rgba(0,0,0,.2)}.date-lines b{color:#eee;font-weight:600}.date-lines em{color:#a77ac4;font-style:normal;font-size:.82rem;border-right:1px solid #4a3b50;padding-right:14px}
+footer{border-top:1px solid #302b34}
+@media(max-width:520px){.date-lines span{min-width:0;width:min(260px,90%)}.section-title:after{display:none}}
+
+
+/* ===== EXTRA DARK PERSONAL PLAYLIST ===== */
+body {
+  background: #050505;
+  color: #eee;
+  background-image:
+    radial-gradient(circle at 15% 10%, rgba(103, 62, 160, .10), transparent 28%),
+    radial-gradient(circle at 85% 80%, rgba(74, 40, 120, .08), transparent 30%);
+}
+header {
+  background: rgba(3, 3, 3, .94);
+  border-bottom: 1px solid rgba(255,255,255,.07);
+}
+.hero {
+  background: #030303;
+  box-shadow: inset 0 -80px 120px rgba(0,0,0,.8);
+}
+.intro {
+  background: #000;
+  color: #cfcfcf;
+  border-top: 1px solid rgba(255,255,255,.04);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+section {
+  background: #070707;
+}
+.section-title {
+  color: #f4f4f4;
+}
+.song-card {
+  background: #0b0b0b;
+  border: 1px solid rgba(255,255,255,.065);
+  box-shadow: 0 18px 45px rgba(0,0,0,.42);
+}
+.song-card:hover {
+  background: #101010;
+  border-color: rgba(160,120,220,.25);
+  box-shadow: 0 22px 55px rgba(0,0,0,.62);
+}
+.special-section {
+  background: #000;
+}
+.special-card {
+  background: #080808;
+  border: 1px solid rgba(255,255,255,.07);
+}
+.about {
+  background: #050505;
+}
+.final-note {
+  background: #000;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+.download-btn {
+  background: #111;
+  border: 1px solid rgba(255,255,255,.10);
+}
+.download-btn:hover {
+  background: #191919;
+}
+nav a { color: #bdbdbd; }
+nav a:hover { color: #fff; }
+footer { background: #000; }
+
+/* ===== BALANCED DARK / LIGHT CARDS ===== */
+/* Keep the overall dark personality, but bring the song cards back to a clean white. */
+.song-card {
+  background: #ffffff;
+  color: #17151a;
+  border: 1px solid #ded5e5;
+  box-shadow: 0 14px 34px rgba(121,80,154,.16), 0 8px 22px rgba(0,0,0,.12);
+}
+.song-card h4 { color: #25152e; }
+.song-card p { color: #716a75; }
+.song-card:hover {
+  background: #ffffff;
+  border-color: #9b72bb;
+  box-shadow: 0 20px 42px rgba(121,80,154,.24), 0 10px 28px rgba(0,0,0,.16);
+}
+.song-card:before { background: rgba(121,80,154,.06); }
+
+/* The intro should feel like the earlier, lighter version. */
+.intro {
+  background: #ffffff;
+  color: #17151a;
+  border-top: 1px solid #e5ddea;
+  border-bottom: 1px solid #e5ddea;
+  box-shadow: 0 12px 32px rgba(121,80,154,.08);
+}
+.intro p { color: #5b5560; }
+
+/* Category labels: dark inside, with a thin white outline. */
+.mood > h3 {
+  background: #090909;
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,.72);
+  border-right: 5px solid #79509a;
+  box-shadow: 0 8px 20px rgba(121,80,154,.16), 0 5px 14px rgba(0,0,0,.22);
+}
+
+/* Make the Comments heading and labels clearly readable. */
+#comments .section-title h2,
+#comments .section-title span { color: #a77ac4; }
+#comments .comment-form label { color: #ffffff; }
+#comments .comment-form input,
+#comments .comment-form textarea {
+  background: #ffffff;
+  color: #17151a;
+  border-color: #cfc1d8;
+  box-shadow: 0 7px 20px rgba(121,80,154,.08);
+}
+#comments .comment-form input::placeholder,
+#comments .comment-form textarea::placeholder { color: #8b8290; }
+#comments .comment-form button { box-shadow: 0 8px 20px rgba(121,80,154,.22); }
+
+/* A subtle purple glow under every main card, without making the site neon. */
+.special-card {
+  box-shadow: 0 18px 40px rgba(121,80,154,.18), 0 10px 25px rgba(0,0,0,.28);
+}
+.special-card:hover {
+  box-shadow: 0 24px 48px rgba(121,80,154,.25), 0 12px 30px rgba(0,0,0,.34);
+}
+.comment {
+  box-shadow: 0 10px 26px rgba(121,80,154,.14);
+}
+
+
+/* ===== Requested final adjustments only ===== */
+
+/* Hero Persian title */
+.hero h1 {
+  color: #79509a;
+}
+
+/* Intro: white + purple visual mix, black Persian text, no emoji */
+.intro {
+  background: linear-gradient(135deg, #ffffff 0%, #f4edf8 55%, #e7d9ef 100%);
+  color: #17151a;
+}
+.intro p {
+  color: #17151a;
+  direction: rtl;
+}
+
+/* Playlist and its English headings/cards run left-to-right */
+#playlist {
+  direction: ltr;
+  text-align: left;
+}
+#playlist .section-title,
+#playlist .mood,
+#playlist .song-grid {
+  direction: ltr;
+  text-align: left;
+}
+#playlist .section-title h2 {
+  color: #79509a;
+}
+
+/* Special Songs: heading and cards left-to-right.
+   Persian descriptions remain right-to-left. */
+#special {
+  direction: ltr;
+  text-align: left;
+}
+#special .section-title,
+#special .special-grid,
+#special .special-card {
+  direction: ltr;
+  text-align: left;
+}
+#special .section-title h2 {
+  color: #a77ac4;
+}
+#special .special-card > p[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Comments section left aligned */
+#comments {
+  direction: ltr;
+  text-align: left;
+}
+#comments .section-title,
+#comments .comment-form,
+#comments .comment-list {
+  direction: ltr;
+  text-align: left;
+}
+
+/* About section left aligned, while its Persian copy stays RTL */
+#about {
+  direction: ltr;
+  text-align: left;
+}
+#about .section-title,
+#about .container {
+  direction: ltr;
+  text-align: left;
+}
+#about .container > p[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Replace the infinity symbol behind the dates with a star */
+.final-note:before {
+  content: "✦";
+  font-size: 9rem;
+}
+
+/* ===== Final dark-background unification ===== */
+/* Make the large dark page areas use one consistent black shade. */
+body {
+  background: #050505;
+  background-image: none;
+}
+.site-header,
+header {
+  background: #050505;
+}
+.hero {
+  background: #050505;
+}
+.section {
+  background: #050505;
+}
+.special-section {
+  background: #050505;
+}
+.about-section {
+  background: #050505;
+}
+.final-note {
+  background: #050505;
+}
+footer {
+  background: #050505;
+}
+
+/* Requested final personal signature styling */
+.final-note > p { color: #79509a; }
+.from-roxen {
+  display: block;
+  margin-top: 18px;
+  color: #a77ac4;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
