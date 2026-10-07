@@ -327,3 +327,45 @@ footer {
   }
 }
 https://roxen2004.github.io/dans-playlist/
+/* ===== ONLY MOBILE HEADER + ABOUT TITLE ===== */
+
+@media (max-width: 520px) {
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    padding: 14px 0;
+    min-height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+  }
+
+  nav a {
+    white-space: nowrap;
+    transform: none !important;
+  }
+}
+
+/* فقط عنوان About در پایین صفحه */
+#about .section-title h2 {
+  color: #a77ac4 !important;
+}
