@@ -326,48 +326,4 @@ footer {
     font-size: .78rem;
   }
 }
-/* ===== FINAL MOBILE HEADER ===== */
-
-@media (max-width: 520px) {
-
-  .nav-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 14px 0;
-    min-height: auto;
-  }
-
-  .logo {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-size: 1.1rem;
-    white-space: nowrap;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    width: 100%;
-    white-space: nowrap;
-  }
-
-  nav a {
-    display: inline-block;
-    font-size: .75rem;
-    white-space: nowrap;
-    transform: none !important;
-  }
-
-  /* فقط کلمه ABOUT بنفش */
-  nav a[href="#about"] {
-    color: #a77ac4 !important;
-  }
-}
+https://roxen2004.github.io/dans-playlist/
