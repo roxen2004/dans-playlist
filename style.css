@@ -326,3 +326,48 @@ footer {
     font-size: .78rem;
   }
 }
+#about,
+.about-section {
+  background: linear-gradient(135deg, #3f245f 0%, #79509a 50%, #542c73 100%) !important;
+  color: #fff !important;
+}
+
+#about .section-title h2,
+#about .section-title span,
+#about p,
+#about .english-line,
+.about-section .section-title h2,
+.about-section .section-title span,
+.about-section p,
+.about-section .english-line {
+  color: #fff !important;
+}
+
+/* Mobile navigation: one row */
+@media (max-width: 520px) {
+  .nav-container {
+    flex-direction: row;
+    min-height: 65px;
+    padding: 10px 0;
+    gap: 8px;
+  }
+
+  .logo {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  nav a {
+    font-size: .68rem;
+    white-space: nowrap;
+  }
+}
